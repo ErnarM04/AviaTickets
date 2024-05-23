@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.aviatickets.R
 import com.example.aviatickets.databinding.ItemOfferBinding
 import com.example.aviatickets.model.entity.Offer

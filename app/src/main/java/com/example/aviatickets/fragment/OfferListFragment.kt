@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import com.example.aviatickets.R
 import com.example.aviatickets.adapter.OfferListAdapter
 import com.example.aviatickets.databinding.FragmentOfferListBinding
@@ -45,7 +46,6 @@ class OfferListFragment : Fragment() {
         val response = client.fetchAPIList()
 
         setupUI()
-
 
         response.enqueue(object : Callback<List<Offer>> {
             override fun onResponse(
